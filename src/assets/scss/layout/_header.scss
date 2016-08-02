@@ -1,0 +1,139 @@
+.page-scroll {
+  display: none;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 3em;
+  width: 100%;
+  // padding: 1em 1em 2em;
+  background: $grey-dark;
+  -webkit-backface-visibility:hidden;
+  z-index: 1;
+
+  &:after {
+    position: absolute;
+    display: block;
+    bottom: -2.5em;
+    left: 0;
+    right: 0;
+    content: '';
+    height: 50%;
+    background: $grey-dark;
+    transform: skewY(1.5deg);
+    transform-origin: 100%;
+    outline: 1px solid transparent;
+    z-index: -1;
+  }
+}
+
+.login-search {
+  flex: 0 0 calc(100%);
+  text-align: center;
+}
+
+.top-search-form {
+  padding: 1em;
+}
+
+#password_login {
+  .input_text, .input_password {
+    background: transparent;
+    border: 2px solid $white;
+    color: $white;
+  }
+}
+
+#quicksearch {
+  background: transparent;
+  border: 2px solid $white;
+  color: $white;
+}
+
+.user {
+  margin-bottom: 1em;
+}
+
+.forum-title-container {
+  flex: 0 0 100%;
+  text-align: center;
+}
+
+.forumlink {
+  color: $white;
+}
+
+.logo {
+  max-width: 150px;
+  height: auto;
+  width: 100%;
+}
+
+.navigation {
+  flex: 0 0 100%;
+  text-align: center;
+}
+
+.toggleMenu {
+  font-weight: bold;
+  color: $white;
+
+  &:visited {
+    color: $white;
+  }
+}
+
+.nav-links {
+  position: fixed;
+  top: calc(-100% - 10em);
+  left: 0;
+  padding: 5em 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.85);
+  z-index: 20;
+  transition: top 200ms linear;
+
+  &.is-opened {
+    top:0;
+  }
+
+  .listlevel1 {
+    position: relative;
+    display: block;
+    padding: 3px 5px;
+    width: 35%;
+    margin: 0 auto;
+    text-align: left;
+  }
+}
+
+.close-menu {
+  position: absolute;
+  top: .6em;
+  right: 1em;
+  color: $white;
+  font-size: 1.3em;
+  z-index: 25;
+}
+
+.linklevel1, .linklevel2 {
+  color: $white;
+
+  &:visited {
+    color: $white;
+  }
+}
+
+.menulevel2 {
+  padding: rem-calc(5);
+  margin-left: 1em;
+  color: $white;
+  text-align: left;
+
+  li {
+    padding: rem-calc(5) 0;
+  }
+}

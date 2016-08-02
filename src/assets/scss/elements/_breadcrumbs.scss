@@ -1,0 +1,23 @@
+.breadcrumbs {
+  max-width: 75em;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.navigate_section {
+  padding: .987em;
+}
+.linktree {
+  display: inline-block;
+
+  &:last-child {
+    .fa-chevron-right {
+      display: none;
+    }
+  }
+}
+
+.fa-chevron-right {
+  margin: 0 3px;
+  font-size: 10px;
+}

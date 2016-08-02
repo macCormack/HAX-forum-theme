@@ -1,0 +1,118 @@
+.admin_menu {
+  flex: 0 0 20%;
+  .linklevel1, .linklevel2 {
+    color: $primary;
+
+    &:visited {
+      color: darken($primary, 10%);
+    }
+  }
+}
+
+.menu-sidebar {
+  flex: 0 0 20%;
+  padding: 0 rem-calc(16/2);
+
+  .listlevel1 {
+    padding: rem-calc(5px) 0;
+  }
+
+  .linklevel1, .linklevel2 {
+    color: $primary;
+
+    &:visited {
+      color: darken($primary, 10%);
+    }
+  }
+}
+
+.cat-title-left {
+  width: 20%;
+  flex-grow: 10;
+  margin: rem-calc(16/2) 0;
+}
+
+#quick_search {
+  align-self: center;
+}
+
+.admincenter {
+  margin: 1em 0;
+}
+
+.support-section {
+  display: flex;
+  flex-flow: row wrap;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid $grey-dark;
+
+  .windowbg {
+    height: 12em;
+    overflow: auto;
+  }
+}
+
+#live_news, #supportVersionsTable {
+  padding: 0 rem-calc(32/2);
+}
+
+#live_news {
+  flex: 0 0 calc(70% - 2em);
+}
+
+#supportVersionsTable {
+  flex:0 0 calc(30% - 2em);
+}
+
+#adm_submenus {
+  li {
+    display: inline-block;
+  }
+}
+
+#manage_boards {
+  .windowbg2, .windowbg {
+    display: flex;
+    flex-flow: row wrap
+  }
+
+  .board-name {
+    width: 70%;
+    cursor: move;
+    font-size: rem-calc(18);
+
+    &:before {
+      font-family: "Segoe UI Symbol","DejaVu Sans","GNU Unifont";
+      content: "\21f3";
+      padding-right: 5px;
+      font-size: 1.286em;
+      margin-top: -1px;
+    }
+  }
+
+  .modify-board {
+    width: 30%;
+    align-self: center;
+    text-align: right;
+  }
+
+  .modify_boards {
+    padding: 0 5px;
+  }
+}
+
+dl.settings {
+  display: flex;
+  flex-flow: row wrap;
+
+  dt {
+    flex: 0 0 40%;
+    margin-bottom: rem-calc(18);
+  }
+
+  dd {
+    flex: 0 0 55%;
+    margin-bottom: rem-calc(18);
+  }
+}

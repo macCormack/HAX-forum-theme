@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  background: $white;
+  color: $jet;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  overflow-x: hidden;
+}
+
+p {
+  color: $jet;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+
+  &:hover {
+    color: darken($primary, 8%);
+    text-decoration: underline;
+  }
+}
+
+dd {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}
+
+input, .input_text, button, select, .icon {
+  vertical-align: middle;
+}
+
+input, select, textarea {
+  padding: 5px;
+}

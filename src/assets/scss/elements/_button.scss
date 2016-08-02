@@ -1,0 +1,27 @@
+.button, .btn, .button_submit {
+  display: inline-block;
+  padding: 6px;
+  margin: 4px;
+  background: $primary;
+  color: $white;
+  transition:all 200ms linear;
+  border: 0;
+
+  &:hover {
+    background: darken($primary, 8%);
+    color: $white;
+    text-decoration: none;
+  }
+
+  &.active {
+    background: darken($primary, 8%);
+  }
+
+  &.inversed {
+    padding: 6px;
+    margin: 4px;
+    background: transparent;
+    color: $white;
+    border: 2px solid $white;
+  }
+}
